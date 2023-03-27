@@ -1,8 +1,4 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
   background-color: $header-background;
 
   &__logo {
@@ -39,7 +35,28 @@
     }
   }
   &__actions {
-    display: flex;
     align-items: center;
+    display: none;
+
+    @media (min-width: $media-md) {
+      display: flex;
+    }
+  }
+  &__inner {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  &__hamburger {
+    width: 1.5rem;
+    display: block;
+
+    @media (min-width: $media-md) {
+      display: none;
+    }
   }
 }

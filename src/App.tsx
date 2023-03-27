@@ -3,12 +3,13 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 
 const App = () => {
-  return {
+  return (
     <div className="App">
       <Header />
       <Navigation />
+      <div className="container">Hello World</div>
     </div>
-  };
+  );
 };
 
 export default App;
