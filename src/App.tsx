@@ -6,17 +6,20 @@ import Checkbox from "./components/checkbox";
 import Form from "./components/form";
 import Pagination from "./components/pagination";
 import Tags from "./components/tags";
+import Modal from "./components/modal";
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Navigation />
-      <Button />
-      <Checkbox label="Label" />
-      <Form />
-      <Pagination />
-      <Tags />
-      <div className="container">Hello World</div>
+      <div className="container">
+        <Button />
+        <Checkbox label="Label" />
+        <Form />
+        <Tags />
+        <Modal />
+        <Pagination />
+      </div>
     </div>
   );
 };
