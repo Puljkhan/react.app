@@ -7,18 +7,46 @@ import Form from "./components/form";
 import Pagination from "./components/pagination";
 import Tags from "./components/tags";
 import Modal from "./components/modal";
+import TransformExe from "./components/transform-exe";
+import FlexformExe from "./components/flexform-exe";
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Navigation />
       <div className="container">
-        <Button />
-        <Checkbox label="Label" />
-        <Form />
-        <Tags />
-        <Modal />
-        <Pagination />
+        <div className="container--component">
+          <h2>Transform property exercise</h2>
+          <TransformExe />
+        </div>
+        <div className="container--component">
+          <h2>Button</h2>
+          <Button />
+        </div>
+        <div className="container--component">
+          <h2>Checkbox</h2>
+          <Checkbox label="Label" />
+        </div>
+        <div className="container--component">
+          <h2>Form</h2>
+          <Form />
+        </div>
+        <div className="container--component">
+          <h2>Tags</h2>
+          <Tags />
+        </div>
+        <div className="container--component">
+          <h2>Modal</h2>
+          <Modal />
+        </div>
+        <div className="container--component">
+          <h2>Pagination</h2>
+          <Pagination />
+        </div>
+        <div className="container--component">
+          <h2>Flex</h2>
+          <FlexformExe />
+        </div>
       </div>
     </div>
   );

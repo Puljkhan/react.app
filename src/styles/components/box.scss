@@ -1,0 +1,41 @@
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: green;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 250ms ease-out;
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--skew {
+    &:hover {
+      transform: skew(20deg, 10deg);
+    }
+  }
+
+  &--scale {
+    &:hover {
+      scale: 2 50%;
+    }
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+
+  &--rotate {
+    &:hover {
+      rotate: 1 1 0 110deg;
+    }
+  }
+
+  &--translate {
+    &:hover {
+      transform: translate3d(50px, 0, 0);
+    }
+  }
+}
