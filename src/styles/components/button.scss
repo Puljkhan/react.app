@@ -1,4 +1,32 @@
-.button {
+@keyframes example {
+  0% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: red;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: orange;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.btn {
   background-color: #4caf50;
   border-radius: 0.5rem;
   transition: all 250ms ease-out;
@@ -7,12 +35,28 @@
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-  &:hover {
+  //colors
+  &--red {
     background-color: red;
+  }
+  &--green {
+    background-color: green;
+  }
+  &--yellow {
+    background-color: yellow;
+  }
+
+  &--animate {
+    &:active {
+      animation-name: example;
+      animation-duration: 6s;
+    }
   }
 }
