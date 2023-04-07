@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 type ButtonColorType = "red" | "green" | "yellow";
 
 type ButtonProps = {
-  animate: boolean;
+  animate?: boolean;
   value?: string;
   icon?: ReactNode;
   color?: ButtonColorType;
@@ -27,7 +27,7 @@ const Button = ({
     <button className={`btn ${animate ? "btn--animate" : ""}`}>
       {icon}
       <span>{value}</span>
-      {test ? "Ima nešto u njemu" : "nema ništa"}
+      {test ? "" : ""}
     </button>
   );
 };

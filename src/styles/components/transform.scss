@@ -1,0 +1,8 @@
+.box__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $media-sm) {
+    flex-direction: row;
+  }
+}

@@ -4,6 +4,10 @@
   display: block;
   margin-bottom: 1rem;
 
+  @media (min-width: 28.75rem) {
+    width: 15rem;
+  }
+
   &--rounded {
     border-radius: 0.5rem;
   }

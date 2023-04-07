@@ -15,6 +15,7 @@ const FlexformExe = () => {
           <IconArrow />
         </div>
       </div>
+      <h4>Second example</h4>
       <div className="flex flex--second"></div>
     </>
   );
