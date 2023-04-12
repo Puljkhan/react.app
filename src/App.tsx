@@ -12,6 +12,7 @@ import FlexformExe from "./components/flexform-exe";
 import IconArrow from "./assets/icon-arrow";
 import Input from "./components/input";
 import Card from "./components/card";
+import Card2 from "./components/card-exe";
 const App = () => {
   return (
     <div className="App">
@@ -64,6 +65,14 @@ const App = () => {
               <Card />
               <Card />
               <Card />
+            </div>
+          </div>
+          <div className="container--component">
+            <div className="card__grid">
+              <Card2 />
+              <Card2 />
+              <Card2 />
+              <Card2 />
             </div>
           </div>
         </div>
