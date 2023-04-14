@@ -1,0 +1,42 @@
+@keyframes box-animation {
+  0% {
+    transform: translate3d(0, -40rem, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rem;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 5rem;
+    width: 10rem;
+    height: 8rem;
+    transform: translate3d(0, -40rem, 0);
+    animation: box-animation 2s ease forwards;
+
+    &--first {
+      background-color: black;
+    }
+
+    &--second {
+      background-color: red;
+      animation-delay: 1s;
+    }
+
+    &--third {
+      background-color: orange;
+      animation-delay: 2s;
+    }
+  }
+}

@@ -13,7 +13,13 @@ const Header = () => {
               Home
             </a>
             <a className="header__nav__item" href="">
-              About
+              Exercises
+            </a>
+            <a className="header__nav__item" href="/ispit">
+              CSS Ispit
+            </a>
+            <a className="header__nav__item" href="/mlinar">
+              Mlinar
             </a>
           </nav>
           <div>IP</div>
