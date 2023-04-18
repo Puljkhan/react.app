@@ -1,0 +1,33 @@
+.card {
+  border: 1px solid black;
+  border-radius: 3rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  width: 20rem;
+  background-color: gray;
+  &__header {
+    display: flex;
+    &__img {
+      width: 3rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    &__banner {
+      border-radius: 50%;
+      background-color: blue;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
