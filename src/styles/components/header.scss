@@ -8,11 +8,19 @@
   &__nav {
     margin-right: 2rem;
     display: flex;
+
+    &--fave {
+      display: flex;
+    }
     &__item {
       text-decoration: none;
       color: $black;
       font-size: 1.25rem;
       margin-right: 1rem;
+
+      &--fave {
+        margin-left: 1rem;
+      }
 
       &:last-child {
         margin-right: 0;
@@ -58,5 +66,13 @@
     @media (min-width: $media-md) {
       display: none;
     }
+  }
+
+  &--fave {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
   }
 }
