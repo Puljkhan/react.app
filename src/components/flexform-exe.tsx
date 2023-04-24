@@ -17,7 +17,6 @@ const FlexformExe = () => {
       </div>
       <h4>Second example</h4>
       <div className="flex flex--second"></div>
-      <div className="flex--second__center"></div>
     </>
   );
 };

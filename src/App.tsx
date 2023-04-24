@@ -6,6 +6,9 @@ import Exe from "./pages/exe";
 import Ispit from "./pages/ispit";
 import Home from "./pages/home";
 import Mlinar from "./pages/mlinar";
+import Fave from "./pages/fave";
+import Varijable from "./pages/varijable";
+
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -23,6 +26,14 @@ const App = () => {
     {
       path: "/ispit",
       element: <Ispit />,
+    },
+    {
+      path: "/fave",
+      element: <Fave />,
+    },
+    {
+      path: "/varijable",
+      element: <Varijable />,
     },
   ]);
 
