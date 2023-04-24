@@ -8,6 +8,7 @@ import Home from "./pages/home";
 import Mlinar from "./pages/mlinar";
 import Fave from "./pages/fave";
 import Varijable from "./pages/varijable";
+import Petlje from "./pages/petlje";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const App = () => {
     {
       path: "/ispit",
       element: <Ispit />,
+    },
+    {
+      path: "/petlje",
+      element: <Petlje />,
     },
     {
       path: "/fave",
