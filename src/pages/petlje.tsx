@@ -15,12 +15,12 @@ const Petlje = () => {
 
     //Zadatci
     //1. ispisati u konzolu jeli zadani broj neparan
-    const number = prompt("Enter a number: ");
-    if (number % 2 == 0) {
-      console.log("The number is even.");
-    } else {
-      console.log("The number is odd.");
-    }
+    //const number = prompt("Enter a number: ");
+    //if (number % 2 == 0) {
+    //console.log("The number is even.");
+    //} else {
+    //console.log("The number is odd.");
+    //}
     //2. ispisati u konzolu brojeve od 0 do zadanog broja
     function printAllNumbers() {
       for (let i = 0; i <= 10; i += 1) {
