@@ -1,36 +1,85 @@
+@keyframes box-animation {
+  0% {
+    transform: translate3d(0, -20rem, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .box {
+  background-color: green;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  transition: all 250ms ease;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: green;
-    border: 1px solid black;
-    width: 10rem;
   }
 
-  &--skew {
+  &--translate {
     &:hover {
-      transform: skew(20deg, 10deg);
-    }
-  }
-
-  &--scale {
-    &:hover {
-      scale: 2 50%;
-    }
-    &:active {
-      transform: scale(0.8);
+      transform: translate3d(3rem, 0, 0);
     }
   }
 
   &--rotate {
     &:hover {
-      rotate: 1 1 0 110deg;
+      transform: rotate(90deg);
     }
   }
 
-  &--translate {
+  &--scale {
     &:hover {
-      transform: translate3d(50px, 0, 0);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &--skew {
+    &:hover {
+      transform: skew(15deg);
+    }
+  }
+
+  &--secondary {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 5rem auto;
+    max-width: 37.5rem;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      width: 10rem;
+      height: 10rem;
+      transform: translate3d(0, -20rem, 0);
+      animation: box-animation 2s ease forwards;
+
+      &:nth-child(1) {
+        background-color: black;
+      }
+
+      &:nth-child(2) {
+        background-color: red;
+        animation-delay: 1s;
+      }
+
+      &:nth-child(3) {
+        background-color: orange;
+        animation-delay: 2s;
+      }
     }
   }
 }
