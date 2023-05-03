@@ -214,7 +214,12 @@ const Vjezba2804 = () => {
           <thead>
             <tr>
               <th>Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Height</th>
               <th>Hobby</th>
+              <th>Employed</th>
               <th>favoriteColor</th>
             </tr>
           </thead>
@@ -223,24 +228,32 @@ const Vjezba2804 = () => {
               return (
                 <tr>
                   <td>{student.name}</td>
+                  <td>{student.lastName}</td>
+                  <td>{student.age}</td>
+                  <td>{student.gender}</td>
+                  <td>{student.height}</td>
                   <td>{student.hobby}</td>
-                  <td>{student.favoriteColor}</td>
+                  <td>{student.employed ? "Yes" : "No"}</td>
+                  <td style={{ color: student.favoriteColor }}>
+                    {student.favoriteColor}
+                  </td>
                 </tr>
               );
             })}
           </tbody>
         </table>
       </div>
+      <hr />
       <div>
-        {frontendRazred.map((student) => {
-          return (
-            <ul>
-              <li>{student.name}</li>
-              <li>{student.lastName}</li>
-              <li>{student.age}</li>
-            </ul>
-          );
-        })}
+        <ul>
+          {frontendRazred.map((student) => {
+            return (
+              <li>
+                {student.name} {student.lastName} {student.age}{" "}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
