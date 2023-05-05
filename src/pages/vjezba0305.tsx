@@ -33,20 +33,6 @@ const Vjezba0305 = () => {
 
   const handleClick = () => {};
 
-const box = document.getElementsByClassName("box")[0] as HTMLDivElement;
-const boxPressed = (e) => {
-  const isBox = e.target.nodeName === `BOX`;
-  if(!isBox) {
-    return;
-  }
-  document.body.style.backgroundColor = e.target.value; 
-  e.target.style.backgroundColor =  e.target.value; 
-  
-}
-
-box.addEventListener('click', boxPressed);
-}
-
   return (
     <div className="container">
       <h1>Vjezba0305</h1>
