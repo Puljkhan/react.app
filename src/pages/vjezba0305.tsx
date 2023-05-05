@@ -15,8 +15,7 @@ const Vjezba0305 = () => {
     return x + y;
   };
 
-  const box = document.getElementsByClassName("box")[0] as HTMLDivElement;
-  box.style.backgroundColor = `red`;
+ 
 
   return (
     <div className="container">
