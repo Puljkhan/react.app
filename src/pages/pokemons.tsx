@@ -65,7 +65,7 @@ const Pokemons = () => {
   };
 
   const getCapitalCity = () => {
-    fetch("https://restcountries.com/v3.1/capital/zagreb")
+    fetch("https://restcountries.com/v3.1/capital/Sofia")
       .then((res) => {
         return res.json();
       })

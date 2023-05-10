@@ -14,6 +14,8 @@ import Vjezba2804 from "./pages/vjezba2804";
 import Vjezba0305 from "./pages/vjezba0305";
 import Breweries from "./pages/breweries";
 import Pokemons from "./pages/pokemons";
+import Europe from "./pages/europe";
+import EuropeCountry from "./pages/europe-country";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -34,8 +36,16 @@ const App = () => {
       element: <Pokemons />,
     },
     {
+      path: "/europecountry",
+      element: <EuropeCountry />,
+    },
+    {
       path: "/vjezba0305",
       element: <Vjezba0305 />,
+    },
+    {
+      path: "/europe",
+      element: <Europe />,
     },
     {
       path: "/breweries",
