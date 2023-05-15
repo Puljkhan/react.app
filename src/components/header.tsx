@@ -18,6 +18,9 @@ const Header = () => {
             <a className="header__nav__item" href="petlje">
               Petlje
             </a>
+            <a className="header__nav__item" href="chat">
+              Chat
+            </a>
             <a className="header__nav__item" href="pokemons">
               Pokemons
             </a>
