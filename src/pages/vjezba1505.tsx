@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const Vjezba1505 = () => {
   //1. Funkcija koja zbraja dva broja iz parametara
   const add = (a: number, b: number) => {
-    return a - b;
+    return a + b;
   };
   //2. Funkcija koja spaja dva array-a stringova
   const concatArrays = (a: string[], b: string[]) => {
@@ -12,7 +12,7 @@ const Vjezba1505 = () => {
 
   //3. Funkcija koja treba u konzolu ispisati brojeve od 1 do 10
   const countToTen = () => {
-    for (let i = 0; i < 11; i++) {
+    for (let i = 1; i < 10; i++) {
       console.log(i);
     }
   };

@@ -27,6 +27,9 @@ const Header = () => {
             <a className="header__nav__item" href="europecountry">
               Europe Country
             </a>
+            <a className="header__nav__item" href="todo">
+              To do list
+            </a>
             <a className="header__nav__item" href="vjezba0305">
               Vjezba0305
             </a>
