@@ -20,6 +20,7 @@ import Countries from "./pages/countries";
 import Chat from "./pages/chat";
 import Vjezba1505 from "./pages/vjezba1505";
 import Todo from "./pages/todo";
+import Vjezba1905 from "./pages/vjezba1905";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const App = () => {
     {
       path: "/todo",
       element: <Todo />,
+    },
+    {
+      path: "/vjezba1905",
+      element: <Vjezba1905 />,
     },
     {
       path: "/europecountry",
