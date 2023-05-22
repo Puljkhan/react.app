@@ -11,6 +11,8 @@ const Card = () => {
       </div>
       <h2 className="card__title">Naslov</h2>
       <p className="card__desc">Ovo je neki sasvim novi tekst</p>
+      <p>Najnoviji tekst</p>
+      <br />
 
       <footer className="card__footer">
         <Button color="green" value="OK" />
