@@ -9,6 +9,7 @@ const Card = () => {
           alt="flowers"
         />
       </div>
+      <br />
       <h2 className="card__title">Naslov</h2>
       <p className="card__desc">New Text</p>
       <hr />
