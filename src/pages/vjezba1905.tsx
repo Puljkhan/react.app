@@ -12,6 +12,7 @@ type NameType = {
 const Vjezba1905 = () => {
   const [asiaData, setAsiaData] = useState<CountryType[]>([]);
   const [searchValue, setSearchValue] = useState<string>("");
+  const test = 2;
 
   const searchAsia = (asiaName: string) => {
     fetch("https://restcountries.com/v3.1/region/asia")
