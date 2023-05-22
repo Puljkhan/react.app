@@ -10,7 +10,7 @@ const Card = () => {
         />
       </div>
       <h2 className="card__title">Naslov</h2>
-      <p className="card__desc">Ovo je neki Text</p>
+      <p className="card__desc">Ovo je neki sasvim novi tekst</p>
 
       <footer className="card__footer">
         <Button color="green" value="OK" />
