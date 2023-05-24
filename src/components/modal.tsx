@@ -1,8 +1,8 @@
 const Modal = () => {
   return (
     <div className="modal">
-      <div className="modal__header">Modal title</div>
-      <div className="modal__main">This is modal content</div>
+      <div className="modal__header">World Record</div>
+      <div className="modal__main">Usain Bolt 9.58</div>
       <div className="modal__footer">
         <button className="modal__footer__btn">Close</button>
       </div>

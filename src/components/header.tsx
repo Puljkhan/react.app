@@ -15,6 +15,9 @@ const Header = () => {
             <a className="header__nav__item" href="">
               Exercises
             </a>
+            <a className="header__nav__item" href="running">
+              Running
+            </a>
             <a className="header__nav__item" href="petlje">
               Petlje
             </a>
