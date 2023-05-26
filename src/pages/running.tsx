@@ -1,14 +1,32 @@
-import Modal from "../components/modal";
+import React, { useState } from "react";
+import ModalComponent from "../components/modalcomponent";
 
 const Running = () => {
-  return (
-    <div className="container">
-      <section className="hidden">
-        <Modal></Modal>
-      </section>
-      <div className="overlay"></div>
-      <button className="btn">100 Meters</button>
-    </div>
-  );
+  const { isModalOpen, setIsModalOpen } = useState<boolean>(false);
+  const Modal = ({ isOpen = false, onCloseRequest }) => {
+    if (!isOpen) {
+      return null;
+    }
+
+    const onModalCloseRequest = (): void => {
+      setIsModalOpen(false);
+    };
+
+    return (
+      <div className="container">
+        <button
+          type="button"
+          onClick={() => setIsModalOpen(true)}
+          className="btn"
+        >
+          100 Meters
+        </button>
+        <ModalComponent
+          isOpen={isModalOpen}
+          onCloseRequest={onModalCloseRequest}
+        />
+      </div>
+    );
+  };
 };
 export default Running;

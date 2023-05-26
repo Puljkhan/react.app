@@ -1,4 +1,4 @@
-const Modal = () => {
+const ModalComponent = () => {
   return (
     <div className="modal">
       <div className="modal__header">World Record</div>
@@ -10,4 +10,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default ModalComponent;

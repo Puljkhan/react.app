@@ -6,7 +6,7 @@ import Card2 from "../components/card-exe";
 import Checkbox from "../components/checkbox";
 import FlexformExe from "../components/flexform-exe";
 import Input from "../components/input";
-import Modal from "../components/modal";
+import ModalComponents from "../components/modalcomponent";
 import Pagination from "../components/pagination";
 import Tags from "../components/tags";
 import TransformExe from "../components/transform-exe";
@@ -37,7 +37,7 @@ const Exe = () => {
         </div>
         <div className="container--component">
           <h2>Modal</h2>
-          <Modal />
+          <ModalComponents />
         </div>
         <div className="container--component">
           <h2>Pagination</h2>
