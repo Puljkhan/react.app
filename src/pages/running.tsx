@@ -8,10 +8,6 @@ const Running = () => {
       return null;
     }
 
-    const onModalCloseRequest = (): void => {
-      setIsModalOpen(false);
-    };
-
     return (
       <div className="container">
         <button

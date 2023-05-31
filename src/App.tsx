@@ -22,6 +22,7 @@ import Vjezba1505 from "./pages/vjezba1505";
 import Todo from "./pages/todo";
 import Vjezba1905 from "./pages/vjezba1905";
 import Running from "./pages/running";
+import Bootstrap from "./pages/bootstrap";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const App = () => {
     {
       path: "/running",
       element: <Running />,
+    },
+    {
+      path: "/bootstrap",
+      element: <Bootstrap />,
     },
     {
       path: "/pokemons",
