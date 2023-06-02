@@ -1,25 +1,22 @@
-// base
+//base
 @import "./base/base.scss";
 @import "./base/vars.scss";
 
-// components
-@import "./components/container.scss";
-@import "./components/header.scss";
-@import "./components/button.scss";
-@import "./components/tags.scss";
-@import "./components/pagination.scss";
-@import "./components/modal.scss";
+//components
+@import "./components/bootstrap.scss";
 @import "./components/box.scss";
-@import "./components/flex.scss";
-@import "./components/input.scss";
-@import "./components/transform.scss";
+@import "./components/button.scss";
 @import "./components/card.scss";
-@import "./components/card-exe.scss";
-@import "./components/toggle.scss";
-@import "./components/ispit.scss";
-@import "./components/mlinar.scss";
+@import "./components/container.scss";
+@import "./components/flex.scss";
+@import "./components/header.scss";
+@import "./components/input.scss";
+@import "./components/modal.scss";
+@import "./components/pagination.scss";
 @import "./components/table.scss";
+@import "./components/tags.scss";
 @import "./components/todo.scss";
-@import "./components/running.scss";
+@import "./components/toggle.scss";
 
+//Bootstrap styles
 @import "node_modules/bootstrap/scss/bootstrap";
