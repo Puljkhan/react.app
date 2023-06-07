@@ -18,6 +18,7 @@ import Vjezba2604 from "./pages/vjezba2604";
 import Vjezba2804 from "./pages/vjezba2804";
 
 import "./styles/styles.scss";
+import Instagram from "./pages/instagram/instagram";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const App = () => {
     {
       path: "/exe",
       element: <Exe />,
+    },
+    {
+      path: "/instagram",
+      element: <Instagram />,
     },
     {
       path: "/mlinar",

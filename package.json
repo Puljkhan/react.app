@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "recharts": "^2.6.2",
-    "sass": "^1.59.3"
+    "sass": "^1.59.3",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@playwright/test": "^1.33.0",

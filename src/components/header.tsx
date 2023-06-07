@@ -10,10 +10,13 @@ const Header = () => {
         <div className="header__actions">
           <nav className="header__nav">
             <a className="header__nav__item" href="">
-              Homeeee
+              Home
             </a>
             <a className="header__nav__item" href="">
               Exercises
+            </a>
+            <a className="header__nav__item" href="instagram">
+              Instagram
             </a>
             <a className="header__nav__item" href="running">
               Running
